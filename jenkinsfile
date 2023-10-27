@@ -26,7 +26,11 @@ pipeline{
                 echo "divya love exercise"
             }
         }
-
+        stage("my fith stage"){
+            steps{
+                echo "devops will be fine"
+            }
+        }
     }
 
 }
