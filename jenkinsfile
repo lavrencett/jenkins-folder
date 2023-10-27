@@ -38,7 +38,7 @@ pipeline{
         }
         stage("taking inputs from users"){
             steps{
-                echo "do you want to continue?"
+                inputs "do you want to continue?"
             }    
         }
 
