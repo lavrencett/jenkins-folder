@@ -30,10 +30,21 @@ pipeline{
             steps{
                 echo "devops will be fine"
             }
-        }
+        } 
         stage("my sixth stage"){
             steps{
                 echo "devops will be good"
+            }
+        }
+        stage("taking inputs from users"){
+            steps{
+                echo "do you want to continue?"
+            }    
+        }
+
+         stage("my 7th stage"){
+            steps{
+                echo "devops is becomming ok"
             }
         }
     }
