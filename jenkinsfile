@@ -47,6 +47,20 @@ pipeline{
                 echo "devops is becomming ok"
             }
         }
+        post {
+  unstable {
+    mail bcc: '', body: 'build is unstable', cc: '', from: '', replyTo: '', subject: 'build is unstable ', to: 'lavrence@hotmail.fr, watat1981@yahoo.fr'
+  }
+  aborted {
+    mail bcc: '', body: 'build is aboted', cc: '', from: '', replyTo: '', subject: 'build is aboted ', to: 'lavrence@hotmail.fr, watat1981@yahoo.fr'
+  }
+  success {
+    mail bcc: '', body: 'this build is successful', cc: '', from: '', replyTo: '', subject: 'build is successful ', to: 'lavrence@hotmail.fr, watat1981@yahoo.fr'
+  }
+  failure {
+    mail bcc: '', body: 'this build is failure', cc: '', from: '', replyTo: '', subject: 'build is failure ', to: 'lavrence@hotmail.fr, watat1981@yahoo.fr'
+  }
+}
     }
 
 }
