@@ -47,7 +47,7 @@ pipeline{
                 echo "devops is becomming ok"
             }
         }
-    post {
+post {
   unstable {
     mail bcc: '', body: 'build is unstable', cc: '', from: '', replyTo: '', subject: 'build is unstable ', to: 'lavrence@hotmail.fr, watat1981@yahoo.fr'
   }
